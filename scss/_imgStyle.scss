@@ -1,0 +1,72 @@
+//手機下載
+body aside .download i {
+    background: url("../img/downlaodIc.png") no-repeat center;
+    background-size: contain;
+} 
+
+//downlaod 背景
+body aside .download .downloadBg {
+    background: url("../img/downlaodBg.png") no-repeat center;
+    background-size: contain;
+} 
+
+//service
+body aside .service li i {
+    background: url("../img/serviceIc.png") no-repeat;
+    background-size: contain;
+}
+//service 背景
+body aside .service li .serviceBg{
+    background: url("../img/serviceBg.png") no-repeat;
+    background-size: contain;
+} 
+
+//回到頂部
+body aside .backTop .icon {
+    background: url("../img/backTopIc.png") no-repeat center;
+    background-size: contain;
+}
+
+//帳號密碼
+header .top .center form label i {
+    background: url("../img/loginIc.png") no-repeat;
+    background-size: 200%;
+}
+
+//logo
+header .bottom .center .logo {
+    background: url("../img/logo.png") no-repeat center;
+    background-size: contain;
+}
+
+// 記住帳號
+header .top .center form .check .display {
+    background: url("../img/check1.jpg") no-repeat center;
+    background-size: contain;
+}
+
+// 背景
+.home .mainGroup {
+    background: url("../img/bg.png") no-repeat center;
+    background-size: contain;
+}
+
+//marquee 背景
+.home .marqueeGroup .marqueeBr {
+    background: url("../img/marqueeBg.png") no-repeat center;
+    background-size: contain;
+}
+
+//marquee icon
+.home .marqueeGroup i {
+    background: url("../img/marqueeIc.png") no-repeat center;
+    background-size: contain;
+}
+
+// footer 背景
+footer .footerTxt {
+    background: url("../img/footerBg.png") no-repeat center;
+    background-size: cover;
+}
+
+

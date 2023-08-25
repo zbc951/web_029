@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/javascript.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="top">
+            <div class="center">
+                <form action="">
+                    <label for="">
+                        <i class="id"></i>
+                        <input type="text" placeholder="請輸入帳號登入">
+                    </label>
+                    <label for="">
+                        <i class="ps"></i>
+                        <input type="password" placeholder="密碼">
+                    </label>
+                    <label class="check" for="">
+                        <input type="checkbox" value="記住帳號">
+                        <span>記住帳號</span>
+                    </label>
+                    <div class="buttonGroup">
+                        <button>登入</button>
+                        <button>註冊</button>
+                    </div>
+                </form>
+                <div class="forget">
+                    <a href="#">忘記密碼</a>
+                </div>
+                <div class="language">
+                    <select name="" id="">
+                        <option value="">繁體中文</option>
+                        <option value="">English</option>
+                        <option value="">簡體中文</option>
+                        <option value="">日本語</option>
+                    </select>
+                    <i></i>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="center">
+                <div class="logo"></div>
+                <ul class="navGroup">
+                    <li class="active"><i></i><a href="#">首頁</a></li>
+                    <li class="sport"><i></i><a href="#">體育賽事</a></li>
+                    <li class="live"><i></i><a href="#">真人娛樂</a></li>
+                    <li class="slot"><i></i><a href="#">老虎機</a></li>
+                    <li class="ticket"><i></i><a href="#">彩票</a></li>
+                    <li class="board"><i></i><a href="#">棋牌遊戲</a></li>
+                    <li class="fish"><i></i><a href="#">捕魚機</a></li>
+                    <li><i></i><a href="#">VIP 會員</a></li>
+                    <li><i></i><a href="#">優惠中心</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- 下拉選單 -->
+        <div class="downList ">
+            <div class="listWrap">
+                <div class="center">
+                    <ol class="sport">
+                        <li>
+                            <img src="./img/downlist/36588.png" alt="">
+                            <p></p>
+                        </li>
+                    </ol>
+                    <ol class="live">
+                        <li>
+                            <img src="./img/downlist/live_1.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/downlist/live_2.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/downlist/live_3.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/downlist/live_4.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/downlist/live_5.png" alt="">
+                            <p></p>
+                        </li>
+                    </ol>
+                    <ol class="slot">
+                        <li>
+                            <img src="./img/downlist/gr.png" alt="">
+                            <p></p>
+                        </li>
+                    </ol>
+                    <ol class="ticket">
+                        <li>
+                            <img src="./img/downlist/gr.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/downlist/gs.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/downlist/rwd.png" alt="">
+                            <p></p>
+                        </li>
+                    </ol>
+                    <ol class="fish">
+                        <li>
+                            <img src="./img/downlist/tpg.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/downlist/sp.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/downlist/rsg.png" alt="">
+                            <p></p>
+                        </li>
+                    </ol>
+                    <ol class="board">
+                        <li>
+                            <img src="./img/downlist/png.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/downlist/ifun.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/downlist/fa.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/downlist/bwin.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/downlist/bts.png" alt="">
+                            <p></p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="home">
+        <!-- swiper -->
+        <section class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/bannerBg2.png" alt="" class="bannerBg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/bannerBg2.png" alt="" class="bannerBg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/bannerBg2.png" alt="" class="bannerBg">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div> 
+        </section>
+        <div class="mainGroup">
+            <!-- 跑馬燈 -->
+            <div class="marqueeGroup">
+                <div class="marqueeBr"></div>
+                <div class="title">
+                    <p>最新消息</p>
+                </div>
+                <div class="marquee">
+                    <p>我是跑馬燈我是跑馬燈我是跑馬燈我是跑馬燈</p>
+                </div>
+            </div>
+            <!-- 遊戲選單 -->
+            <div class="gameGroup">
+                <ul>
+                    <li>
+                        <div class="picGroup">
+                            <div class="gameBg"><img src="./img/gameBg.png" alt=""></div>
+                            <div class="frontPic"><img src="./img/AALive.png" alt="" class="AALive"></div>
+                            <div class="light1"><img src="./img/gameLight1.png" alt=""></div>
+                            <div class="title">
+                                <img src="./img/titleBg.png" alt="">
+                                <span>體育賽事</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="picGroup">
+                            <div class="gameBg"><img src="./img/gameBg.png" alt=""></div>
+                            <div class="frontPic"><img src="./img/SSLive.png" alt="" class="SSLive"></div>
+                            <div class="light2"><img src="./img/gameLight2.png" alt=""></div>
+                            <div class="title">
+                                <img src="./img/titleBg.png" alt="">
+                                <span>真人娛樂</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="picGroup">
+                            <div class="gameBg"><img src="./img/gameBg.png" alt=""></div>
+                            <div class="frontPic"><img src="./img/BBBSlot.png" alt="" class="BBBSlot"></div>
+                            <div class="light3"><img src="./img/gameLight3.png" alt=""></div>
+                            <div class="title">
+                                <img src="./img/titleBg.png" alt="">
+                                <span>老虎機</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="picGroup">
+                            <div class="gameBg"><img src="./img/gameBg.png" alt=""></div>
+                            <div class="frontPic"><img src="./img/CCCSlot.png" alt="" class="CCCSlot"></div>
+                            <div class="light4"><img src="./img/gameLight4.png" alt=""></div>
+                            <div class="title">
+                                <img src="./img/titleBg.png" alt="">
+                                <span>彩票</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="gamebox">
+                    <li>
+                        <div class="picGroup">
+                            <div class="frontPic"><img src="./img/ABCBoard.png" alt="" class="ABCBoard"></div>
+                            <div class="gameBg"><img src="./img/gameBg2.png" alt=""></div>
+                            <div class="title">
+                                <img src="./img/titleBg2.png" alt="">
+                                <span>棋牌遊戲</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="picGroup">
+                            <div class="frontPic"><img src="./img/TTFish.png" alt="" class="TTFish"></div>
+                            <div class="gameBg"><img src="./img/gameBg2.png" alt=""></div>
+                            <div class="title">
+                                <img src="./img/titleBg2.png" alt="">
+                                <span>捕魚機</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>            
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="footerGroup">
+            <div class="navGroup">
+                <ul>
+                    <li class="active"><p>最新公告</p></li>
+                    <li><p>優惠</p></li>
+                    <li><p>幫助中心</p></li>
+                    <li><p>關於我們</p></li>
+                </ul>
+                <span>2023 IS88.net 版權所有｜18+</span>
+            </div>
+        </div>
+        <div class="footerTxt">
+            <p>
+                世界頂級的在線娛樂公司。因此，在處理任何事情的時候，都會優先考慮客戶的利益。客戶的最大滿意就是我們的成功。
+            </p>
+            <p>
+                提供全天候24小時的在線客服，提供專業化和人性化相結合的最佳服務。
+            </p>
+        </div>
+    </footer>
+    <!-- background -->
+    <div class="bg"></div>
+    <div class="filter">
+        <div class="popUp">
+            <div class="title">
+                <p>最新消息</p>
+                <div class="close">╳</div>
+            </div>
+            <div class="contentGroup">
+                <ul class="content">
+                    <li><p>熱門</p></li>
+                    <li class="active"><p>一般</p></li>
+                    <li><p>存款</p></li>
+                </ul>
+                <ul class="information">
+                    <li><p>格式測試@@@@</p></li>
+                    <li><p>格式測試@@</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <aside>
+        <!-- 手機下載 -->
+        <div class="download">
+            <div class="downloadBg"></div>
+            <div class="txt">
+                <i></i>
+                <p>手機下載</p>
+            </div>
+        </div>
+        <!-- 聯絡 -->
+        <ul class="service">
+            <li>
+                <div class="serviceBg"></div>
+                <p>LINE</p>
+            </li>
+            <li>
+                <div class="serviceBg"></div>
+                <i class="phone"></i>
+            </li>
+        </ul>
+        <!-- 回到上層 -->
+        <div class="backTop display">
+            <div class="icon"></div>
+        </div>
+    </aside>
+</body>
+</html>

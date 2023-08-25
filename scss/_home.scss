@@ -1,0 +1,358 @@
+.home {
+    width: 100%;
+    height: auto;
+    padding-top: 123px;
+
+    //swiper
+    .swiper {
+        max-width: 1903px;
+        width: 100%;
+        height: 498px;
+        
+        .swiper-wrapper {
+
+            .swiper-slide {
+                width: 1899px;
+                height: 500px;
+                position: relative;
+
+                &.swiper-slide-active {
+
+                }
+            }
+        }
+        .swiper-pagination {
+            bottom: 15px;
+            left: 30px;
+            
+            .swiper-pagination-bullet {
+                width: 41px;
+                height: 5px;
+                border-radius: 10px;
+                background: $swiperBullet_2;
+                margin: 0 5px;
+            }
+            .swiper-pagination-bullet-active {
+                width: 41px;
+                height: 5px;
+                border-radius: 10px;
+                background: $swiperBullet_1;
+                margin: 0 5px;
+            }
+        }
+    }
+    .mainGroup {
+        width: 100%;
+        min-width: 1903px;
+        height: 870px;
+        margin: 0 auto;
+        padding-top: 15px;
+        
+        //marquee
+        .marqueeGroup {
+            width: 1400px;
+            height: 50px;
+            @include marquee;
+        }
+        //遊戲選單
+        .gameGroup {
+            width: 1400px;
+            height: auto;
+            margin: 0px auto;
+
+            ul {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 40px;
+
+                &:last-child {
+
+                    li {
+                        mask: url("../img/mask2.png") center no-repeat;
+                    }
+                }
+
+                li {
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    padding: 3px 20px;
+                    cursor: pointer;
+                    mask: url("../img/mask1.png") center center  no-repeat;
+
+
+                    .picGroup {
+                        width: auto;
+                        height: auto;
+                        position: relative;
+
+                        .gameBg {
+                            width: auto;
+                            height: auto;
+
+                            img {
+                                width: auto;
+                                height: auto;
+                            }
+                        }
+
+                        .frontPic {
+                            width: auto;
+                            height: auto;
+                            position: absolute;
+                            bottom: 25px;
+                            left: 70px;
+                            animation: frontPic 2s linear infinite;
+                            
+
+                            @keyframes frontPic {
+                                0% {
+                                    transform: scaleX(1)scaleY(1);
+                                }
+                                25% {
+                                    transform: scaleX(1.05)scaleY(1.02);
+                                }
+                                50% {
+                                    transform: scaleX(1)scaleY(1);
+                                }
+                                75% {
+                                    transform: scaleX(1.05)scaleY(1.02);
+                                }
+                                100% {
+                                    transform: scaleX(1)scaleY(1);
+                                }
+                            }
+                            img {
+                                width: auto;
+                                height: auto;
+
+                                &.AALive {
+                                    position: absolute;
+                                    bottom: -20px;
+                                    left: -54px;
+                                }
+                                &.SSLive {
+                                    position: absolute;
+                                    bottom: -20px;
+                                    left: -30px;
+                                }
+                                &.BBBSlot {
+                                    position: absolute;
+                                    bottom: -25px;
+                                    left: -50px;
+                                }
+                                &.CCCSlot {
+                                    position: absolute;
+                                    bottom: 30px;
+                                    left: -53px;
+                                }
+                                &.ABCBoard {
+                                    position: absolute;
+                                    bottom: 10px;
+                                    left: -45px;
+                                }
+                                &.TTFish {
+                                    position: absolute;
+                                    bottom: -15px;
+                                    left: -45px;
+                                }
+                            }
+                        }
+                        .light1 {
+                            width: auto;
+                            height: auto;
+                            position: absolute;
+                            top: 71px;
+                            left: 13px;
+                        }
+                        .light2 {
+                            width: auto;
+                            height: auto;
+                            position: absolute;
+                            top: 20px;
+                            left: 10px;
+                        }
+                        .light3 {
+                            width: auto;
+                            height: auto;
+                            position: absolute;
+                            top: 77px;
+                            left: 50px;
+                        }
+                        .light4 {
+                            width: auto;
+                            height: auto;
+                            position: absolute;
+                            top: 27px;
+                            left: 0;
+                        }
+
+
+                        .title {
+                            width: auto;
+                            height: auto;
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 0;
+
+                            img {
+                                width: auto;
+                                height: auto;
+                            }
+                            span {
+                                color: $gameTitle_2;
+                                font-size: 21px;
+                                font-weight: bold;
+                                position: absolute;
+                                bottom: 25px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                            }
+                        }
+                    }
+
+                    &:hover,&:active,&.active {
+                        .picGroup {
+                            
+                            .frontPic {
+
+                                .AALive {
+                                    animation: AALive 1s linear;
+                                    @keyframes AALive {
+                                        0% {
+                                            transform: translateX(100%);
+                                        }
+                                        20% {
+                                            transform: translateX(0%)translateY(-2%);
+                                        }
+                                        50% {
+                                            transform: translateX(20%)translateY(2%);
+                                        }
+                                        60% {
+                                            transform: translateX(5%)translateY(10%);
+                                        }
+                                        100% {
+                                            transform: translateX(0%);
+                                        }
+                                    }
+                                }
+                                .SSLive {
+                                    animation: SSLive 1s linear;
+                                    @keyframes SSLive {
+                                        0% {
+                                            transform: translateX(100%);
+                                        }
+                                        20% {
+                                            transform: translateX(0%)translateY(-2%);
+                                        }
+                                        50% {
+                                            transform: translateX(0%)translateY(2%);
+                                        }
+                                        80% {
+                                            transform: translateX(0%)translateY(10%)rotate(5deg);
+                                        }
+                                        100% {
+                                            transform: translateX(0%)rotate(0deg);
+                                        }
+                                    }
+                                }
+                                .BBBSlot {
+                                    animation: BBBSlot 1s linear;
+                                    transform-origin: bottom;
+                                    @keyframes BBBSlot {
+                                        0% {
+                                            transform: translateX(100%);
+                                        }
+                                        20% {
+                                            transform: translateX(0%);
+                                        }
+                                        50% {
+                                            transform: translateX(0%)rotate(5deg);
+                                        }
+                                        55% {
+                                            transform: translateX(0%)rotate(-5deg);
+                                        }
+                                        100% {
+                                            transform: translateX(0%)rotate(0deg);
+                                        }
+                                    }
+                                }
+                                .CCCSlot {
+                                    animation: CCCSlot 1s linear;
+                                    transform-origin: bottom;
+                                    @keyframes CCCSlot {
+                                        0% {
+                                            transform: translateY(100%);
+                                        }
+                                        20% {
+                                            transform: translateY(-10%);
+                                        }
+                                        50% {
+                                            transform: translateY(10%);
+                                        }
+                                        55% {
+                                            transform: translatY(-10%);
+                                        }
+                                        100% {
+                                            transform: translateY(0%);
+                                        }
+                                    }
+                                }
+                                .ABCBoard {
+                                    animation: ABCBoard 1s linear;
+                                    transform-origin: bottom;
+                                    @keyframes ABCBoard {
+                                        0% {
+                                            transform: scaleX(1)scaleY(1);
+                                        }
+                                        20% {
+                                            transform: scaleX(1.05)scaleY(1.2);
+                                        }
+                                        50% {
+                                            transform: scaleX(1.1)scaleY(1.08);
+                                        }
+                                        55% {
+                                            transform: scaleX(1.05)scaleY(1.1);
+                                        }
+                                        100% {
+                                            transform: scaleX(1)scaleY(1);
+                                        }
+                                    }
+                                }
+                                .TTFish {
+                                    animation: TTFish 1s linear;
+                                    transform-origin: bottom;
+                                    @keyframes TTFish {
+                                        0% {
+                                            transform: scaleX(1)scaleY(1);
+                                        }
+                                        20% {
+                                            transform: scaleX(1.05)scaleY(1.1);
+                                        }
+                                        50% {
+                                            transform: scaleX(1.1)scaleY(1.08);
+                                        }
+                                        55% {
+                                            transform: scaleX(1.05)scaleY(1.1);
+                                        }
+                                        100% {
+                                            transform: scaleX(1)scaleY(1);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
